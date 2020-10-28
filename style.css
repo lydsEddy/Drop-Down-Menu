@@ -1,0 +1,91 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 900px;
+
+	background-image: url("programming.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-size: sans-serif;
+}
+
+.menuBar{
+	background: #000;
+	text-align: center;
+}
+
+.menuBar ul{
+	display: inline-flex;
+	list-style: none;
+	color: #ffffff;
+}
+
+.menuBar ul li{
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
+}
+
+.menuBar ul li a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.active,.menuBar ul li:hover{
+	background: #00008B;
+	border-radius: 3px;
+}
+
+.menuBar .fa{
+	margin-right: 8px;
+}
+
+.sub1{
+	display: none;
+}
+
+.menuBar ul li:hover .sub1{
+	display: block;
+	position: absolute;
+	background: #000;
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+.menuBar ul li:hover .sub1 ul{
+	display: block;
+	margin: 10px;
+}
+
+.menuBar ul li:hover .sub1 ul li{
+	width: 130px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	border-radius: 0;
+	text-align: left;
+}
+
+.menuBar ul li:hover .sub1 ul li:last-child{
+	border-bottom: none;
+}
+
+.fa-angle-right {
+	float: right;
+}
+
+.sub-menu2{
+	display: none;
+}
+
+.hoverMe:hover .sub-menu2 {
+	position: absolute;
+	display: block;
+	margin-top: -10px;
+	margin-left: 140px;
+	background: #000000;
+}
